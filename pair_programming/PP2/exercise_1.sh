@@ -12,7 +12,7 @@ if [ $varCommit == 'N' ]; then
 	exit 1
 elif [ $varCommit == 'Y' ]; then
 	read -r -p 'Enter commit message: ' msgCommit
-	git commit -m '$msgCommit'
+	git commit -m "$msgCommit"
 	git status
 	echo "'$file' committed successfully"
 fi
