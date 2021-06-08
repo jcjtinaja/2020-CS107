@@ -20,6 +20,11 @@ fi
 read -r -p 'Do you wish to push? (Y/N): ' varPush
 
 if [ $varPush == 'N' ]; then
+<<<<<<< HEAD
+=======
+	git reset --soft HEAD^
+	git restore --staged $file
+>>>>>>> 6f265758ffa5691daf3bb1679e92612bc19f473d
 	exit 1
 elif [ $varPush == 'Y' ]; then
 	echo "Trying to push '$varCommit'..."
